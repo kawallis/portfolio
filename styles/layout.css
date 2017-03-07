@@ -1,0 +1,17 @@
+nav {
+    display: fixed;
+    width: 100%;
+    height: 7vh;
+    top: 0px;
+    padding-top: 2vh;
+    padding-left: 2vh;
+}
+.icon-list-ul {
+    width: 5%;
+    text-align: center;
+}
+
+#landing-image {
+    width: 100%;
+    height: 92vh;
+}
