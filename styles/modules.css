@@ -1,9 +1,25 @@
-nav {
-    background-color: white;
+.nav-one {
+    background-color: rgba(60, 60, 60, 0.7);
 }
 
-.icon-list-ul {
-    color: mediumpurple;
-    font-size: 4vh;
-    border: 2px solid white;
+.nav-one li {
+    display: none;
+    list-style: none;
+    color: rgb(3, 135, 149);
+    padding: 2% 0px;
+    font-size: 3vh;
+    border-bottom: 2px solid rgba(60, 60, 60, 0.7);
+    width: 10%;
+}
+
+.icon-align-justify {
+    font-size: 5vh;
+    color: rgb(3, 135, 149);
+}
+.rotate {
+    transform: rotate(90deg);
+}
+#landing-image {
+    background-image: url("../img/landing.jpg");
+    background-repeat: no-repeat;
 }
