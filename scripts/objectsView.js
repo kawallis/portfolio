@@ -1,8 +1,8 @@
 var objectsView = {};
 
 $(document).ready(function () {
-  $('#heading').hide().fadeIn(1000); 
-  console.log('clicking');
+  $('body').hide();
+  $('body').fadeIn(2000);
 });
 
 
