@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name'viewport' content="width=device-width, initial-scale=1">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="fonts/styles.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -12,24 +13,51 @@
 </head>
 <body>
     <section>
-        <div id="landing-image">
+        <div class="landing-image">
             <nav class="nav-one">
                 <div class="icon-align-justify"></div>
+                <p id="menu">Menu</p>
+                <div data-content="gallery" class="icon-camera-retro"></div>
+                <div data-content="github" class="icon-mark-github"></div>
+                <div data-content="contact" class="icon-book"></div>
                 <ul>
-                    <li>About</li>
-                    <li>Contact</li>
-                    <li>Gallery</li>
-                    <li>Projects</li>
-                    <li>Blog</li>
+                    <li data-content="about">About</li>
+                    <li data-content="contact">Contact</li>
+                    <li data-content="gallery">Gallery</li>
+                    <li data-content="projects">Projects</li>
+                    <li data-content="blog">Blog</li>
                 </ul>
             </nav>
-            <div id="heading">
-                <h1>My Heading</h1>
-                <h3>Lets go get it</h3>
+            <div id="heading" class="tab-content">
+                <h1 id="landing-title">My Heading</h1>
+                <h3 id="landing-title">Lets go get it</h3>
             </div>
         </div>
     </section>
+    <div id="articles"> 
+        <section class="template">
+            <div class="image">
+                <div class="heading-container">
+                    <h1 class="title">Project heading</h1>
+                    <h3 class="subtitle">Lets go get it</h3>
+                </div>
+                <button class="button"><a href="" class="anchor">Go to page</a></button>
+            </div>
+        </section>
+    </div>
+    <section id="contact" class="tab-content">
+        <div id="contact-container">
+            <h1>To Contact Me:</h1>
+            <ul>
+                <li>Coding</li>
+                <li>Sharing what I've learned</li>
+                <li>Hanging with my family</li>
+            </ul>
+        </div>
+    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src='app.js'></script>
+    <script src='scripts/objectsView.js'></script>
+    <script src='scripts/articles.js'></script>
+    <script src='scripts/objects.js'></script>
 </body>
 </html>
