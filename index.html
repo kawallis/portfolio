@@ -10,6 +10,19 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
+    <!--handlebars script tag for template-->
+    <script id="entry-template" type="text/x-handlebars-template">
+   
+        <div class="image" style="background-image: url({{picture}})">
+            <div class="heading-container">
+                <h1 class="title">{{title}}</h1>
+                <h3 class="subtitle">{{subtitle}}</h3>
+            </div>
+            <p class="publishdate">{{publishedOn}}</p>
+            <button class="button"><a href="{{link}}" class="anchor">Go to page</a></button>
+        </div>
+ 
+    </script>
 </head>
 <body>
     <section>
@@ -34,16 +47,8 @@
             </div>
         </div>
     </section>
+    <!--where all the objects are appended too-->
     <div id="articles"> 
-        <section class="template">
-            <div class="image">
-                <div class="heading-container">
-                    <h1 class="title">Project heading</h1>
-                    <h3 class="subtitle">Lets go get it</h3>
-                </div>
-                <button class="button"><a href="" class="anchor">Go to page</a></button>
-            </div>
-        </section>
     </div>
     <section id="contact" class="tab-content">
         <div id="contact-container">
@@ -56,6 +61,7 @@
         </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
     <script src='scripts/objectsView.js'></script>
     <script src='scripts/articles.js'></script>
     <script src='scripts/objects.js'></script>

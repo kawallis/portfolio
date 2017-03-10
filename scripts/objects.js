@@ -9,17 +9,10 @@ function Project(object) {
 }
 
 Project.prototype.toHtml = function() {
-  var $newArticle = $('section.template').clone().removeClass('template');
-
-  $newArticle.find('button a').attr('href', this.link);
-  $newArticle.find('h1:first').text(this.title);
-  $newArticle.find('h3:first').text(this.subtitle);
-  //need to change to image still
-  $newArticle.find('div:first').css({
-    'background-image': 'url(' + this.picture + ')',
-    'background-repeat':'no-repeat'
-  } );
-  return $newArticle;
+  var source = $('#entry-template').html();
+  var template = Handlebars.compile(source);
+  var html = template(this);
+  return html;
 };
 
 projects.sort(function(a,b) {
