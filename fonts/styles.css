@@ -86,3 +86,9 @@
 .icon-angellist:before {
   content: "\6a";
 }
+.icon-times-circle:before {
+  content: "\72";
+}
+.icon-bars:before {
+  content: "\71";
+}
