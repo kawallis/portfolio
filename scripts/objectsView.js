@@ -8,8 +8,9 @@ $(document).ready(function () {
 
 $('.icon-align-justify').click(function() {
   $('.icon-align-justify').toggleClass('rotate');
-  // $('#menu').hide();
-  $('.nav-one li').toggle('slow');
+  console.log($('.nav-one'));
+  $('.nav-one').toggleClass('background');
+  $('.nav-drop').toggle('slow');
 });
 
 objectsView.handleMainNav = function() {
