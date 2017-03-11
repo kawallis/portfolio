@@ -9,6 +9,7 @@
     margin-top: 10px;
 }
 
+/*ICON STYLING */
 .icon-align-justify, #menu {
     padding: 1vh;
     width: 5%;
@@ -27,6 +28,24 @@
     float: right;
     padding: 1.5vh 4vh;
 }
+div .icon-align-justify:hover {
+    color: white;
+}
+div .icon-book:hover {
+    color: white;
+    background-color: rgb(102, 252, 241);
+}
+
+div .icon-camera-retro:hover {
+    color: white;
+    background-color: rgb(102, 252, 241);
+}
+
+div .icon-mark-github:hover {
+    color: white;
+    background-color: rgb(102, 252, 241);
+}
+
 .landing-image {
     margin: 0px;
     background-size:100% 100%;
@@ -100,7 +119,7 @@
     font-weight: bold;
 }
 
-/*css for the about element*/
+/*css for the contact element*/
 #contact {
     display: none;
     position: fixed; 
@@ -128,4 +147,21 @@
 }
 #contact li {
     list-style: none;
+}
+
+.icon-times-circle {
+    color: white;
+    font-size: 2em;
+}
+
+/*css for the about element*/
+
+#about {
+    display: none;
+    color: white;
+    font-size: 1em;
+    font-family: 'Press Start 2P', cursive;
+    position: fixed;
+    top:30vh;
+    left: 50vh;
 }

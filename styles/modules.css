@@ -1,15 +1,22 @@
-.nav-one {
-    
+.nav-one ul {
+    float: clear;
 }
-
 .nav-one li {
+    z-index: 0;
     display: none;
-    list-style: none;
     color: rgb(102, 252, 241);
+
     padding: 2% 0px;
     font-size: 3vh;
     border-bottom: 2px solid white;
     width: 10%;
+    height: 4vh;
+    list-style: none;
+}
+
+.nav-one li a {
+    color: rgb(102, 252, 241);
+    text-decoration: none;
 }
 
 .icon-align-justify, .icon-camera-retro, .icon-mark-github, .icon-book{
