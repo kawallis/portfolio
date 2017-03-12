@@ -8,7 +8,6 @@ $(document).ready(function () {
 
 $('.icon-align-justify').click(function() {
   $('.icon-align-justify').toggleClass('rotate');
-  console.log($('.nav-one'));
   $('.nav-one').toggleClass('background');
   $('.nav-drop').toggle('slow');
 });
@@ -25,9 +24,9 @@ objectsView.handleNavDrop = function() {
     $('.nav-one li').toggle('slow');
     $('.tab-content').hide();
     $('#articles').hide();
-    console.log($('#' + $(this).data('content')));
     $('#' + $(this).data('content')).fadeIn();
     $('#' + $(this).data('head')).fadeIn();
+    $('.nav-drop').toggle('slow');
   });
 };
 
