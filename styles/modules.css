@@ -9,7 +9,7 @@
 .nav-drop li {
     display: block;
     color: rgb(102, 252, 241);    
-    font-size: 1em;
+    font-size: 2em;
     border-bottom: 2px solid white;
     height: 4vh;
     list-style: none;
@@ -30,6 +30,9 @@
     transition-duration: 1s;
 }
 
+.icon-camera-retro, .icon-mark-github, .icon-book { 
+    display: none;
+}
 /*STYLING FOR THE MENU DROP DOWN*/
 .background {
     background-color: rgb(0, 1, 32);
