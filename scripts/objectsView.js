@@ -5,7 +5,7 @@ $(document).ready(function () {
   $('body').fadeIn(2000);
 });
 
-
+// for the hamburger menu
 $('.icon-align-justify').click(function() {
   $('.icon-align-justify').toggleClass('rotate');
   $('.nav-one').toggleClass('background');
@@ -18,6 +18,7 @@ objectsView.handleMainNav = function() {
   });
 };
 
+//for the drop down menu
 objectsView.handleNavDrop = function() {
   $('.nav-drop').on('click', '.tab', function() {
     $('.icon-align-justify').toggleClass('rotate');
@@ -27,15 +28,18 @@ objectsView.handleNavDrop = function() {
     $('#' + $(this).data('content')).fadeIn();
     $('#' + $(this).data('head')).fadeIn();
     $('.nav-drop').toggle('slow');
+    $('.nav-one').toggleClass('background');
   });
 };
 
+//for the icons that need to be added by media query
 objectsView.iconHandler = function () {
   $('#icon-container').on('click', '.tab', function () {
     $(this).effect('shake');
   });
 };
 
+//for the contact box that pops up
 objectsView.contactHandler = function () {
   $('.icon-times-circle').on('click', function () {
     $('#contact').effect('blind'); 
