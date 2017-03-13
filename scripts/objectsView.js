@@ -46,6 +46,12 @@ objectsView.contactHandler = function () {
   });
 };
 
+objectsView.initIndexPage = function() {
+  Project.all.forEach(function(a) {
+    $('#articles').append(a.toHtml());
+  });
+};
+
 objectsView.handleMainNav();
 objectsView.handleNavDrop();
 objectsView.iconHandler();

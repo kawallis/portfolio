@@ -30,9 +30,7 @@
     transition-duration: 1s;
 }
 
-.icon-camera-retro, .icon-mark-github, .icon-book { 
-    display: none;
-}
+
 /*STYLING FOR THE MENU DROP DOWN*/
 .background {
     background-color: rgb(0, 1, 32);
@@ -46,3 +44,5 @@
     background-image: url("../img/landing.jpg");
     background-repeat: no-repeat;
 }
+
+
