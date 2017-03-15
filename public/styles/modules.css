@@ -1,3 +1,7 @@
+/*font-family: 'Holtwood One SC', serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Fjalla One', sans-serif;*/
+
 .nav-drop {
     display: none;
     position: fixed; 
@@ -5,8 +9,9 @@
     z-index: 5;
     width: 100%;
     padding: 0px;
-    background-color: rgba(0, 1, 32, 0.95);
+    background-color: rgba(0, 0, 0, 0.95);
     height: 95vh;
+    font-family: 'Permanent Marker', cursive;
 }
 .nav-drop li {
     display: block;
@@ -20,21 +25,23 @@
 }
 
 .nav-drop li a {
-    color: rgb(102, 252, 241);
+    color: white;
     text-decoration: none;
     width: 100%;
 }
 
 .icon-align-justify, .icon-camera-retro, .icon-mark-github, .icon-book{
     font-size: 5vh;
-    color:rgb(102, 252, 241);
+    color:rgb(254, 222, 0);
     transition-duration: 1s;
 }
 
 
+
+
 /*STYLING FOR THE MENU DROP DOWN*/
 .background {
-    background-color: rgb(0, 1, 32);
+    background-color: rgba(0, 0, 0, 0.95);
     transition-duration: 1s;
 }
 .rotate {
