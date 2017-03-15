@@ -27,6 +27,8 @@ objectsView.handleNavDrop = function() {
     $('#articles').hide();
     $('#' + $(this).data('content')).fadeIn();
     $('#' + $(this).data('head')).fadeIn();
+    
+    //makes the blue background and nav-drop go away
     $('.nav-drop').toggle('slow');
     $('.nav-one').toggleClass('background');
   });
@@ -34,8 +36,8 @@ objectsView.handleNavDrop = function() {
 
 //for the icons that need to be added by media query
 objectsView.iconHandler = function () {
-  $('#icon-container').on('click', '.tab', function () {
-    $(this).effect('shake');
+  $('#icon-container').on('mouseover', '.tab', function () {
+    $(this).effect('shake',{distance:150, direction: 'up'});
   });
 };
 

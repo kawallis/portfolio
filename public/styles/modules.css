@@ -1,21 +1,22 @@
 .nav-drop {
     display: none;
     position: fixed; 
-    top: 6vh;
+    top: 5vh;
     z-index: 5;
     width: 100%;
     padding: 0px;
+    background-color: rgba(0, 1, 32, 0.95);
+    height: 95vh;
 }
 .nav-drop li {
     display: block;
     color: rgb(102, 252, 241);    
     font-size: 2em;
-    border-bottom: 2px solid white;
     height: 4vh;
     list-style: none;
-    padding: 2vh 0px;
+    padding: 5vh 0px;
     width: 100%;
-    background-color: rgb(0, 1, 32);
+    
 }
 
 .nav-drop li a {

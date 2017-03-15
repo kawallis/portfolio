@@ -45,10 +45,9 @@ Project.fetchAll = function() {
     // then load all the data into Article.all with the .loadAll function above,
     // and then render the index page.
     $.ajax({
-      url: 'data/projects.json',
+      url: '/data/projects.json',
       method: 'GET',
       success: function(data) {
-        console.log(data);
         var rawDataJSON = JSON.stringify(data);
         localStorage.setItem('rawData', rawDataJSON);
         Project.fetchAll();
