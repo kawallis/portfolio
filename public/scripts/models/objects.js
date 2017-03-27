@@ -9,27 +9,29 @@ function Project(object) {
 
 Project.all =[];
 
-Project.prototype.toHtml = function() {
+Project.prototype.toHtml = function () {
   var source = $('#entry-template').html();
   var template = Handlebars.compile(source);
   var html = template(this);
   return html;
 };
-Project.loadAll = function(rawData) {
+
+Project.loadAll = rawData => {
   rawData.sort(function(a,b) {
     return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
   });
 
-  rawData.forEach(function(ele) {
-    Project.all.push(new Project(ele));
-  });
+  rawData.map(obj => {Project.all.push(new Project(obj))});
+  // rawData.forEach(function(ele) {
+  //   Project.all.push(new Project(ele));
+  // });
 };
 
 // allProjects.forEach(function(a){
 //   $('#articles').append(a.toHtml());
 // });
 
-Project.fetchAll = function() {
+Project.fetchAll = () => {
   if (localStorage.rawData) {
     // When rawData is already in localStorage,
     // we can load it with the .loadAll function above,
