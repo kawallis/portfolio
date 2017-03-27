@@ -1,3 +1,4 @@
+
 var objectsView = {};
 
 $(document).ready(function () {
@@ -13,7 +14,7 @@ $('.icon-align-justify').click(function() {
 });
 
 objectsView.handleMainNav = function() {
-  $('.icon-book').on('click', function() {
+  $('.icon-book').on('click', () => {
     $('#' + $(this).data('content')).fadeIn();
   });
 };
@@ -42,16 +43,14 @@ objectsView.iconHandler = function () {
 };
 
 //for the contact box that pops up
-objectsView.contactHandler = function () {
-  $('.icon-times-circle').on('click', function () {
+objectsView.contactHandler = () => {
+  $('.icon-times-circle').on('click',() =>{
     $('#contact').effect('blind'); 
   });
 };
 
 objectsView.initIndexPage = function() {
-  Project.all.forEach(function(a) {
-    $('#articles').append(a.toHtml());
-  });
+  Project.all.map(a => {$('#articles').append(a.toHtml())});
 };
 
 objectsView.handleMainNav();

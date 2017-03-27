@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="scripts/jquery-ui-1.12.1.custom/jquery-ui.min.css">
-   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Holtwood+One+SC|Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Holtwood+One+SC|Permanent+Marker|Rubik+Mono+One" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="fonts/styles.css">
+    <link rel="stylesheet" href="vendor/fonts/styles.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
@@ -22,7 +22,7 @@
             <p class="publishdate">{{publishedOn}}</p>
             <button class="button"><a href="{{link}}" class="anchor">Go to page</a></button>
         </div>
- 
+        
     </script>
 </head>
 <body>
@@ -32,7 +32,6 @@
                 <div class="icon-align-justify"></div>
                 <p id="menu">Menu</p>
                 <div id="icon-container">
-                    <div data-content="gallery" class="icon-camera-retro tab"></div>
                     <a href="https://github.com/kawallis"><div data-content="github" class="icon-mark-github tab"></div></a>
                     <div data-content="contact" class="icon-book tab"></div>
                 </div>
@@ -41,14 +40,13 @@
                 <li class="tab" data-head="heading" data-content="articles"><a href="#">Home</a></li>
                 <li class="tab" data-content="about"><a href="#">About</a></li>
                 <li class="tab" data-content="contact"><a href="#">Contact</a></li>
-                <li class="tab" data-content="gallery"><a href="#">Gallery</a></li>
-                <li class="tab" data-content="blog"><a href="#">Blog</a></li>
+                <!--<li class="tab" data-content="gallery"><a href="#">Gallery</a></li>
+                <li class="tab" data-content="blog"><a href="#">Blog</a></li>-->
             </ul>
             <div id="heading" class="tab-content">
                 <h1 id="landing-title">My</h1>
-                <h1 id="landing-title">Heading</h1>
-               
-                <h3 id="landing-title">Lets go get it</h3>
+                <h1 id="landing-title">Portfolio</h1>
+                <h3 id="landing-title">by, Chris Wallace</h3>
             </div>
         </div>
     </section>
@@ -60,33 +58,37 @@
             <div class="icon-times-circle"></div>
             <h1>To Contact Me:</h1>
             <ul>
-                <li>Coding</li>
-                <li>Sharing what I've learned</li>
-                <li>Hanging with my family</li>
+                <li>Email: kawallis@icloud.com</li>
+                <li>LinkedIn: Dont believe in it</li>
+                <li>Github: kawallis</li>
             </ul>
         </div>
     </section>
     <section id="about" class="tab-content">
         <div id='container-about'>
-            <header>
-            Welcome to my Blog
-            </header>
             <section>
-            
-            <h1>Some of my intrests:</h1>
-            <ul>
-                <li>Coding</li>
-                <li>Sharing what I've learned</li>
-                <li>Hanging with my family</li>
-            </ul>
+                <h1>Some of my interests:</h1>
+                <ul>
+                    <li>Coding and Photography</li>
+                    <li>Sharing what I've learned</li>
+                    <li>Hanging with my family</li>
+                    <li>Playing golf and all other sports</li>
+                </ul>
+            </section>
         </div>
-        </section>
       </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="scripts/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-    <script src='scripts/objectsView.js'></script>
-    <script src='scripts/objects.js'></script>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <script src='scripts/views/objectsView.js'></script>
+    <script src='scripts/models/objects.js'></script>
+    <script src="/scripts/controllers/aboutController.js"></script>
+    <script src="/scripts/controllers/contactController.js"></script>
+    <script src="/scripts/controllers/galleryController.js"></script>
+    <script src="/scripts/controllers/homeController.js"></script>
+    <script src="/scripts/controllers/blogController.js"></script>
+    <script src="/scripts/controllers/routes.js"></script>
     <script> 
         Project.fetchAll();
     </script>

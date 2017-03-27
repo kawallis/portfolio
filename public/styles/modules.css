@@ -32,7 +32,7 @@ font-family: 'Fjalla One', sans-serif;*/
 
 .icon-align-justify, .icon-camera-retro, .icon-mark-github, .icon-book{
     font-size: 5vh;
-    color:rgb(254, 222, 0);
+    color:rgb(0, 254, 129);
     transition-duration: 1s;
 }
 

@@ -50,10 +50,10 @@
 }
 #heading h1 {
     margin: 0px;
-    font-size: 2em;
-    color: rgb(254, 222, 0);
-    font-family: 'Holtwood One SC', serif;
-    font-weight: 20;
+    font-size: 3em;
+    color: rgb(0, 254, 129);
+    font-family: 'Rubik Mono One', sans-serif;
+    
 }
 #heading h3 {
     font-size: 1em;
@@ -87,9 +87,9 @@
 
 .title {
     padding-top: 10vh;
-    font-size: 10vh;
-    color: rgb(254, 222, 0);
-    font-family: 'Holtwood One SC', serif;
+    font-size: 15vh;
+    color: rgb(0, 254, 129);
+    font-family: 'Rubik Mono One', sans-serif;
 }
 
 .subtitle {
@@ -102,7 +102,7 @@
 
 .button {
     background-color: transparent; 
-    border: .5vh solid rgb(254, 222, 0);
+    border: .5vh solid rgb(0, 254, 129);
     border-radius: 20px;
     height: 8vh; 
     width: 25vh;
@@ -126,6 +126,7 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     padding-top: 30vh;
+    font-family: sans-serif;
 }
 #contact-container {
     background-color: rgb(0, 1, 0);
@@ -168,7 +169,15 @@
 #container-about {
     width: 50%; 
     margin: 35vh auto;
+    font-family: sans-serif;
 }
+
+/*CSS for the blog posts*/
+
+#blogPosts {
+    display: none;
+}
+
 
 /*FOR THE MEDIA QUERIES on BROWSERS*/
 
